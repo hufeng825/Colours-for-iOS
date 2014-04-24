@@ -1,16 +1,18 @@
 Pod::Spec.new do |s|
   s.name         = 'Colours'
-  s.version      = '3.1'
-  s.summary      = '100s of beautiful, predefined UIColors and UIColor methods.'
+  s.version      = '5.3.0'
+  s.summary      = '100s of beautiful, predefined Colors and Color methods. Works for iOS/OSX.'
   s.author = {
     'Ben Gordon' => 'brgordon@ua.edu'
   }
   s.source = {
-    :git => 'https://github.com/bennyguitar/Colours-for-iOS.git',
-    :tag => '3.1'
+    :git => 'https://github.com/bennyguitar/Colours.git',
+    :tag => '5.3.0'
   }
-  s.homepage    = 'http://subvertapps.com'
+  s.homepage    = 'https://github.com/bennyguitar'
   s.license     = 'LICENSE'
   s.source_files = '*.{h,m}'
-  s.platform = :ios
+  s.ios.deployment_target = '5.0'
+  s.osx.deployment_target = '10.7'
+  s.requires_arc = true
 end
